@@ -58,7 +58,7 @@
     "format": "prettier '**/*.{md,js,jsx,json,ts,tsx}' --write",
     "postbuild": "rimraf {lib,es}/**/__tests__ {lib,es}/**/*.{spec,test}.{js,d.ts,js.map}",
     "postversion": "git push && git push --tags",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "typescript",
